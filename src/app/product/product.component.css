@@ -1,0 +1,49 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  margin: 10px;
+  width: 250px; /* Optional width to ensure consistent size */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card h1 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.card p.price {
+  font-size: 16px;
+  color: #007bff;
+  margin: 8px 0;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Limit card's maximum width */
+@media (max-width: 300px) {
+  .card {
+    width: 100%; /* Adjust as needed */
+  }
+}
